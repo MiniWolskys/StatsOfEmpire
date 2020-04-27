@@ -46,7 +46,7 @@ def main():
     players_list = get_player_list()
     print(f"{len(players_list)} retrieved in total.")
     table = "Player_List"
-    connection = pymysql.connect(host="testdatabase.csbinovyql8d.eu-west-2.rds.amazonaws.com", user="admin", password="q4s5d6-x2s5z8", db="Player_Base_Information")
+    connection = pymysql.connect(host="testdatabase.csbinovyql8d.eu-west-2.rds.amazonaws.com", user="admin", password="password", db="Player_Base_Information")
     cursor = connection.cursor()
     i = 0
     size = len(players_list)
